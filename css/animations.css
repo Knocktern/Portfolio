@@ -1,0 +1,540 @@
+/* ==========================================
+   ANIMATIONS & TRANSITIONS
+   ========================================== */
+
+/* ========== Keyframe Animations ========== */
+
+/* Float Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    33% {
+        transform: translate(30px, -30px);
+    }
+    66% {
+        transform: translate(-20px, 20px);
+    }
+}
+
+/* Bounce Animation for Scroll Indicator */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) translateX(-50%);
+    }
+    40% {
+        transform: translateY(-20px) translateX(-50%);
+    }
+    60% {
+        transform: translateY(-10px) translateX(-50%);
+    }
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In Left Animation */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fade In Right Animation */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Scale In Animation */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Gradient Shift Animation */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+/* Typing Animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Slide In From Bottom */
+@keyframes slideInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Rotate Gentle */
+@keyframes rotateGentle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ========== Hero Section Animations ========== */
+
+/* Hero Text Animations */
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
+}
+
+.fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0;
+}
+
+.greeting {
+    animation-delay: 0.2s;
+}
+
+.name {
+    animation-delay: 0.4s;
+}
+
+.title {
+    animation-delay: 0.6s;
+}
+
+.tagline {
+    animation-delay: 0.8s;
+}
+
+.cta-buttons {
+    animation-delay: 1s;
+}
+
+.social-links {
+    animation-delay: 1.2s;
+}
+
+.hero-image {
+    animation: fadeInRight 1s ease-out 0.5s forwards;
+    opacity: 0;
+}
+
+/* Typing Effect for Title */
+.typing-text {
+    position: relative;
+    display: inline-block;
+}
+
+/* ========== Scroll Reveal Animations ========== */
+
+/* Elements with reveal class */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger animation for grid items */
+.reveal-stagger {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.reveal-stagger.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Add delays for staggered items */
+.reveal-stagger:nth-child(1) { transition-delay: 0.1s; }
+.reveal-stagger:nth-child(2) { transition-delay: 0.2s; }
+.reveal-stagger:nth-child(3) { transition-delay: 0.3s; }
+.reveal-stagger:nth-child(4) { transition-delay: 0.4s; }
+.reveal-stagger:nth-child(5) { transition-delay: 0.5s; }
+.reveal-stagger:nth-child(6) { transition-delay: 0.6s; }
+
+/* ========== Hover Animations ========== */
+
+/* Button Hover Effects */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* Card Hover Glow Effect */
+.project-card,
+.achievement-card,
+.contact-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::before,
+.achievement-card::before,
+.contact-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(99, 102, 241, 0.1),
+        transparent
+    );
+    transform: rotate(45deg);
+    transition: all 0.6s ease;
+}
+
+.project-card:hover::before,
+.achievement-card:hover::before,
+.contact-card:hover::before {
+    left: 100%;
+}
+
+/* Social Icon Ripple Effect */
+.social-icon {
+    position: relative;
+    overflow: hidden;
+}
+
+.social-icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(99, 102, 241, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+}
+
+.social-icon:hover::after {
+    width: 100px;
+    height: 100px;
+}
+
+/* ========== Skill Tag Animations ========== */
+.skill-tag {
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-tag::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s;
+}
+
+.skill-tag:hover::before {
+    left: 100%;
+}
+
+/* ========== Project Filter Animation ========== */
+.project-card.filtered-out {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.5s ease;
+    pointer-events: none;
+}
+
+.project-card.filtered-in {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
+/* ========== Loading Animation ========== */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ========== Smooth Scroll Progress Bar ========== */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    z-index: 9999;
+    transition: width 0.1s ease-out;
+}
+
+/* ========== Image Hover Effects ========== */
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    mix-blend-mode: overlay;
+}
+
+.image-wrapper:hover::after {
+    opacity: 0.3;
+}
+
+/* ========== Achievement Badge Pulse ========== */
+.achievement-badge {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.achievement-card:hover .achievement-badge {
+    animation: none;
+    transform: scale(1.1) rotate(5deg);
+    transition: transform 0.3s ease;
+}
+
+/* ========== CV Icon Float ========== */
+.cv-icon {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* ========== Text Gradient Animation ========== */
+.gradient-text {
+    background-size: 200% auto;
+    animation: gradientShift 3s ease infinite;
+}
+
+/* ========== Link Underline Animation ========== */
+.achievement-link,
+.nav-link {
+    position: relative;
+}
+
+.achievement-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.achievement-link:hover::after {
+    width: calc(100% - 30px);
+}
+
+/* ========== Parallax Effect for Background Orbs ========== */
+.gradient-orb {
+    will-change: transform;
+}
+
+/* ========== Stagger Animation for List Items ========== */
+.project-features li {
+    opacity: 0;
+    animation: fadeInLeft 0.5s ease forwards;
+}
+
+.project-card:hover .project-features li:nth-child(1) { animation-delay: 0.1s; }
+.project-card:hover .project-features li:nth-child(2) { animation-delay: 0.2s; }
+.project-card:hover .project-features li:nth-child(3) { animation-delay: 0.3s; }
+.project-card:hover .project-features li:nth-child(4) { animation-delay: 0.4s; }
+.project-card:hover .project-features li:nth-child(5) { animation-delay: 0.5s; }
+
+/* Reset animation when not hovering */
+.project-card:not(:hover) .project-features li {
+    opacity: 1;
+    animation: none;
+}
+
+/* ========== Navbar Scroll Animation ========== */
+.navbar {
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.hidden {
+    transform: translateY(-100%);
+}
+
+/* ========== Hamburger Menu Animation ========== */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* ========== Smooth Color Transitions ========== */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Exclude specific elements from global transition */
+.nav-link::after,
+.btn::before,
+.social-icon::after,
+.project-card::before,
+.achievement-card::before,
+.contact-card::before {
+    transition: all 0.3s ease;
+}
+
+/* ========== Page Load Animation ========== */
+@keyframes pageLoad {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: pageLoad 0.5s ease-in;
+}
+
+/* ========== Focus Visible Styles (Accessibility) ========== */
+.btn:focus-visible,
+.nav-link:focus-visible,
+.social-icon:focus-visible,
+.filter-btn:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
+/* ========== Reduce Motion for Accessibility ========== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

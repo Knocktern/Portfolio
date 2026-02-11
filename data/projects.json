@@ -1,0 +1,111 @@
+[
+  {
+    "id": 1,
+    "name": "HireMe",
+    "category": "Full-Stack",
+    "tagline": "Smart Job Matching Platform",
+    "description": "A comprehensive hiring platform that connects employers with skilled candidates through AI-powered job matching, skill assessments, and integrated video interviews with collaborative code editor.",
+    "tech": ["Python", "Flask", "MySQL", "WebRTC", "Socket.IO", "AI Matching"],
+    "features": [
+      "AI-powered job matching with 87% accuracy",
+      "Real-time video interviews with built-in code editor",
+      "Expert interviewer marketplace",
+      "Skill-based MCQ assessments",
+      "Complete candidate tracking system"
+    ],
+    "github": "https://github.com/Knocktern",
+    "live": null,
+    "folder": "Updated-videoCallingFull"
+  },
+  {
+    "id": 2,
+    "name": "The Quiet Game",
+    "category": "Full-Stack",
+    "tagline": "Multiplayer Sign Language Game",
+    "description": "An innovative multiplayer game where players use sign language instead of drawing to act out words. Features real-time video streaming, live leaderboards, and difficulty-based word categories.",
+    "tech": ["Python", "Flask", "WebRTC", "Socket.IO", "JavaScript"],
+    "features": [
+      "Real-time peer-to-peer video streaming",
+      "Multiplayer room system with live chat",
+      "Dynamic scoring with time-based bonuses",
+      "Multi-difficulty word categories",
+      "Responsive design for all devices"
+    ],
+    "github": "https://github.com/Knocktern",
+    "live": null,
+    "folder": "The-Quiet-Game",
+    "achievement": "🏆 Winner of Judges Choice award at \"UIU HackDay\" Hackathon"
+  },
+  {
+    "id": 3,
+    "name": "Real-Time Video Calling IDE",
+    "category": "Full-Stack",
+    "tagline": "Discord-like Platform with Code Editor",
+    "description": "A Discord-inspired web application combining video calling with a professional online code editor. Supports multi-language code execution and real-time collaboration.",
+    "tech": ["Python", "Flask", "WebRTC", "Monaco Editor", "MySQL", "Socket.IO"],
+    "features": [
+      "Peer-to-peer video/audio calling",
+      "Professional Monaco code editor (VS Code engine)",
+      "Real code execution in 9+ languages",
+      "Screen sharing and collaborative coding",
+      "Room-based access control"
+    ],
+    "github": "https://github.com/Knocktern",
+    "live": null,
+    "folder": "Real-Time Video Calling with built-in Coding IDE"
+  },
+  {
+    "id": 4,
+    "name": "Hospital Management System",
+    "category": "Full-Stack",
+    "tagline": "Digital Healthcare Solution",
+    "description": "A comprehensive hospital management system streamlining patient records, appointment booking, prescription management, and administrative tasks.",
+    "tech": ["Python", "Flask", "MySQL", "HTML/CSS", "JavaScript"],
+    "features": [
+      "Patient registration and record management",
+      "Appointment scheduling system",
+      "Digital prescription management",
+      "Doctor and staff management",
+      "Secure authentication system"
+    ],
+    "github": "https://github.com/Knocktern",
+    "live": null,
+    "folder": "Hospital_Management_System"
+  },
+  {
+    "id": 5,
+    "name": "Air Quality Prediction",
+    "category": "Machine Learning",
+    "tagline": "ML-Based Environmental Forecasting",
+    "description": "A machine learning model that predicts air quality levels using historical environmental data, helping communities plan for poor air quality days.",
+    "tech": ["Python", "Scikit-learn", "Pandas", "NumPy", "Jupyter", "Matplotlib"],
+    "features": [
+      "Predictive modeling using regression algorithms",
+      "Data preprocessing and feature engineering",
+      "Visualization of air quality trends",
+      "Model evaluation and accuracy metrics",
+      "Real-world dataset analysis"
+    ],
+    "github": "https://github.com/Knocktern",
+    "live": null,
+    "folder": "Project_Air_Quality_Prediction.ipynb"
+  },
+  {
+    "id": 6,
+    "name": "Student Dropout Prediction",
+    "category": "Machine Learning",
+    "tagline": "Early Warning System for Education",
+    "description": "A predictive analytics solution that identifies students at risk of dropping out, enabling educational institutions to provide timely intervention and support.",
+    "tech": ["Python", "Scikit-learn", "Pandas", "NumPy", "Jupyter", "Seaborn"],
+    "features": [
+      "Classification models for dropout prediction",
+      "Exploratory data analysis and visualization",
+      "Feature importance ranking",
+      "Performance comparison of ML algorithms",
+      "Actionable insights for educators"
+    ],
+    "github": "https://github.com/Knocktern",
+    "live": null,
+    "folder": "Student_Dropout_Prediction.ipynb"
+  }
+]

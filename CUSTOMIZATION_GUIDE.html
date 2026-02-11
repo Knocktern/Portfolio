@@ -1,0 +1,126 @@
+<!-- 
+  QUICK CUSTOMIZATION GUIDE
+  ========================
+  
+  This file contains quick reference for common customizations.
+  Copy-paste these snippets as needed.
+-->
+
+<!-- ADD DARK MODE TOGGLE (Future Enhancement) -->
+<!-- 
+<button id="themeToggle" onclick="toggleTheme()">
+    <i class="fas fa-moon"></i>
+</button>
+
+<script>
+function toggleTheme() {
+    document.body.classList.toggle('dark-mode');
+    // Save preference
+    localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+}
+</script>
+-->
+
+<!-- CHANGE COLOR SCHEME -->
+<!--
+Open css/style.css and modify the :root variables (lines 6-15):
+    
+    --primary-color: #6366f1;  // Change to your brand color
+    --accent-color: #14b8a6;   // Change accent
+-->
+
+<!-- ADD MORE SOCIAL LINKS -->
+<!--
+Copy this pattern in the hero section around line 78:
+
+<a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter" class="social-icon">
+    <i class="fab fa-twitter"></i>
+</a>
+-->
+
+<!-- ADD A BLOG SECTION -->
+<!--
+Create a new section before contact:
+
+<section id="blog" class="blog">
+    <div class="container">
+        <div class="section-header reveal">
+            <p class="section-subtitle">Latest Thoughts</p>
+            <h2 class="section-title">Blog</h2>
+        </div>
+        <div class="blog-grid">
+            // Blog posts here
+        </div>
+    </div>
+</section>
+
+Then add to navigation:
+<li><a href="#blog" class="nav-link">Blog</a></li>
+-->
+
+<!-- ADD GOOGLE ANALYTICS (Track Visitors) -->
+<!--
+Get your tracking ID from analytics.google.com
+Add before </head> in index.html:
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+-->
+
+<!-- ADD FAVICON -->
+<!--
+1. Create a favicon.ico or favicon.png
+2. Put it in the root folder
+3. Add to <head> in index.html:
+
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+-->
+
+<!-- CHANGE FONTS -->
+<!--
+Browse fonts at fonts.google.com
+Replace line 13 in index.html with your chosen font link
+Update line 27 in css/style.css with the font name
+-->
+
+<!-- ADD WHATSAPP CONTACT -->
+<!--
+<a href="https://wa.me/8801234567890" target="_blank" class="contact-card">
+    <div class="contact-icon">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+    <h3>WhatsApp</h3>
+    <p>+880 123 456 7890</p>
+</a>
+-->
+
+<!-- ADD LOADING SCREEN -->
+<!--
+Add at the start of <body>:
+
+<div id="loader" class="loader">
+    <div class="spinner"></div>
+</div>
+
+Add to CSS:
+.loader {
+    position: fixed;
+    inset: 0;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
+
+Add to JS:
+window.addEventListener('load', () => {
+    document.getElementById('loader').style.display = 'none';
+});
+-->
