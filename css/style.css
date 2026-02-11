@@ -100,11 +100,11 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 .logo {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     background: var(--gradient-primary);
     background-clip: text;
@@ -646,6 +646,24 @@ h1, h2, h3, h4, h5, h6 {
     padding: 60px;
     text-align: center;
     border: 2px dashed var(--text-light);
+}
+
+.achievement-image {
+    margin-top: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.achievement-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.achievement-image img:hover {
+    transform: scale(1.02);
 }
 
 .placeholder-content i {
