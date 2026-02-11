@@ -678,7 +678,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Add grid for smaller achievement cards */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
+    .achievements-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .achievement-card.featured {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .achievement-card.featured .achievement-image {
+        margin-top: 0;
+        height: 100%;
+    }
+    
+    .achievement-card.featured .achievement-image img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
     .achievements-grid {
         grid-template-columns: repeat(2, 1fr);
     }
