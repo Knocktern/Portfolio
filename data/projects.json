@@ -7,13 +7,13 @@
     "description": "A comprehensive hiring platform that connects employers with skilled candidates through AI-powered job matching, skill assessments, and integrated video interviews with collaborative code editor.",
     "tech": ["Python", "Flask", "MySQL", "WebRTC", "Socket.IO", "AI Matching"],
     "features": [
-      "AI-powered job matching with 87% accuracy",
+      " Smart Job matching based on skills and experience",
       "Real-time video interviews with built-in code editor",
       "Expert interviewer marketplace",
       "Skill-based MCQ assessments",
       "Complete candidate tracking system"
     ],
-    "github": "https://github.com/Knocktern",
+    "github": "https://github.com/Knocktern/HireMe",
     "live": null,
     "folder": "Updated-videoCallingFull"
   },
@@ -31,7 +31,7 @@
       "Multi-difficulty word categories",
       "Responsive design for all devices"
     ],
-    "github": "https://github.com/Knocktern",
+    "github": "https://github.com/Knocktern/The-Quiet-Game",
     "live": null,
     "folder": "The-Quiet-Game",
     "achievement": "🏆 Winner of Judges Choice award at \"UIU HackDay\" Hackathon"
@@ -50,7 +50,7 @@
       "Screen sharing and collaborative coding",
       "Room-based access control"
     ],
-    "github": "https://github.com/Knocktern",
+    "github": "https://github.com/Knocktern/Video-Calling-web-application",
     "live": null,
     "folder": "Real-Time Video Calling with built-in Coding IDE"
   },
@@ -68,7 +68,7 @@
       "Doctor and staff management",
       "Secure authentication system"
     ],
-    "github": "https://github.com/Knocktern",
+    "github": "https://github.com/Knocktern/Hospital_Management_System_DBMS-",
     "live": null,
     "folder": "Hospital_Management_System"
   },
@@ -86,7 +86,7 @@
       "Model evaluation and accuracy metrics",
       "Real-world dataset analysis"
     ],
-    "github": "https://github.com/Knocktern",
+    "github": "https://github.com/Knocktern/Air_Quality_Prediction_ML",
     "live": null,
     "folder": "Project_Air_Quality_Prediction.ipynb"
   },
