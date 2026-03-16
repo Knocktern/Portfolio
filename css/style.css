@@ -535,6 +535,12 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
     border: 2px solid var(--primary-light);
     padding: 50px;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.achievement-main {
+    min-width: 0;
 }
 
 .achievement-badge {
@@ -655,6 +661,45 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: var(--shadow-md);
 }
 
+/* Featured achievements: center image below description */
+.achievement-card.featured > .achievement-image {
+    margin: 30px auto 0;
+    width: 100%;
+    max-width: 900px;
+}
+
+.achievement-card.featured > .achievement-image img {
+    max-height: 600px;
+    object-fit: contain;
+}
+
+/* Featured achievements: 2-image gallery (poster + group photo) */
+.achievement-card.featured .achievement-gallery {
+    margin: 30px auto 0;
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+@media (min-width: 768px) {
+    .achievement-card.featured .achievement-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.achievement-card.featured .achievement-gallery .achievement-image {
+    margin-top: 0;
+    width: 100%;
+    max-width: none;
+}
+
+.achievement-card.featured .achievement-gallery .achievement-image img {
+    max-height: 520px;
+    object-fit: contain;
+}
+
 .achievement-image img {
     width: 100%;
     height: auto;
@@ -685,20 +730,7 @@ h1, h2, h3, h4, h5, h6 {
     
     .achievement-card.featured {
         grid-column: 1 / -1;
-        display: grid;
-        grid-template-columns: 1.2fr 0.8fr;
-        gap: 40px;
-        align-items: center;
-    }
-
-    .achievement-card.featured .achievement-image {
-        margin-top: 0;
-        height: 100%;
-    }
-    
-    .achievement-card.featured .achievement-image img {
-        height: 100%;
-        object-fit: cover;
+        display: flex;
     }
 }
 
@@ -709,6 +741,7 @@ h1, h2, h3, h4, h5, h6 {
     
     .achievement-card.featured {
         grid-column: 1 / -1;
+        display: flex;
     }
 }
 

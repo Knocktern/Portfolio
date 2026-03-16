@@ -22,22 +22,39 @@ If you want to keep your original filename:
 
 ---
 
-## 🏆 HOW TO ADD HACKATHON AWARD PHOTOS
+## 🏆 HOW TO ADD ACHIEVEMENT AWARD PHOTOS
 
 1. **Add Photos:**
    - Copy your award/certificate photos to `assets/images/`
-   - Example names: `uiu-hackday-award.jpg`, `certificate.jpg`
+   - For this template, the Achievements section currently references:
+     - `Hackathon.jpg`
+       - `ProjectShow.png`
+       - `poster.png`
+   - You can use other filenames, but then update the `src` in `index.html`.
 
 2. **Update HTML:**
    - Open `index.html`
-   - Find line 238 (the achievement section)
-   - Replace the placeholder with:
+   - Find the Achievements section (`<section id="achievements" ...>`)
+   - Update the image `src`, for example:
    
 ```html
 <div class="achievement-image">
     <img src="assets/images/Hackathon.jpg" 
          alt="UIU HackDay Winning Moment"
          style="width: 100%; border-radius: 12px; margin-top: 20px;">
+</div>
+
+<!-- Project Show example -->
+<div class="achievement-image">
+   <img src="assets/images/ProjectShow.png" 
+       alt="UIU CSE Project Show — HireMe award photo"
+       style="width: 100%; border-radius: 12px; margin-top: 20px;">
+</div>
+
+<!-- FYDP-1 example (poster + group photo) -->
+<div class="achievement-gallery" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-top: 20px;">
+   <img src="assets/images/poster.png" alt="FYDP-1 winner list poster" style="width: 100%; border-radius: 8px;">
+   <img src="assets/images/ProjectShow.png" alt="Award ceremony group photo" style="width: 100%; border-radius: 8px;">
 </div>
 ```
 

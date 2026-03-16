@@ -203,24 +203,20 @@ function initializeProjectFilters() {
 
 function filterProjects(category) {
     const projectCards = document.querySelectorAll('.project-card');
+    const normalizedFilter = String(category || '').trim().toLowerCase();
     
-    projectCards.forEach((card, index) => {
-        const projectCategory = card.dataset.category;
-        
-        if (category === 'all' || projectCategory === category) {
+    projectCards.forEach(card => {
+        const projectCategory = String(card.dataset.category || '').trim().toLowerCase();
+        const isMatch = normalizedFilter === 'all' || projectCategory === normalizedFilter;
+
+        if (isMatch) {
+            card.style.display = '';
             card.classList.remove('filtered-out');
             card.classList.add('filtered-in');
-            
-            // Stagger animation
-            setTimeout(() => {
-                card.style.opacity = '1';
-                card.style.transform = 'scale(1)';
-            }, index * 50);
         } else {
+            card.style.display = 'none';
             card.classList.add('filtered-out');
             card.classList.remove('filtered-in');
-            card.style.opacity = '0';
-            card.style.transform = 'scale(0.8)';
         }
     });
 }
@@ -272,22 +268,57 @@ function initializeScrollProgress() {
 function initializeTypingEffect() {
     const typingText = document.querySelector('.typing-text');
     if (!typingText) return;
-    
-    const text = typingText.textContent;
+
+    const phrasesRaw = (typingText.getAttribute('data-phrases') || '').trim();
+    const phrases = phrasesRaw
+        ? phrasesRaw.split('|').map(p => p.trim()).filter(Boolean)
+        : [typingText.textContent.trim()].filter(Boolean);
+
+    if (phrases.length === 0) return;
+
+    const typeSpeed = 60;
+    const deleteSpeed = 35;
+    const pauseAfterType = 1200;
+    const pauseAfterDelete = 250;
+
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
     typingText.textContent = '';
-    let index = 0;
-    
-    // Start typing after hero animation
-    setTimeout(() => {
-        const typeInterval = setInterval(() => {
-            if (index < text.length) {
-                typingText.textContent += text.charAt(index);
-                index++;
-            } else {
-                clearInterval(typeInterval);
+
+    const tick = () => {
+        const currentPhrase = phrases[phraseIndex];
+
+        if (!isDeleting) {
+            typingText.textContent = currentPhrase.slice(0, charIndex + 1);
+            charIndex++;
+
+            if (charIndex === currentPhrase.length) {
+                isDeleting = true;
+                setTimeout(tick, pauseAfterType);
+                return;
             }
-        }, 100);
-    }, 800);
+
+            setTimeout(tick, typeSpeed);
+            return;
+        }
+
+        typingText.textContent = currentPhrase.slice(0, charIndex - 1);
+        charIndex--;
+
+        if (charIndex <= 0) {
+            isDeleting = false;
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+            setTimeout(tick, pauseAfterDelete);
+            return;
+        }
+
+        setTimeout(tick, deleteSpeed);
+    };
+
+    // Start typing after hero animation
+    setTimeout(tick, 800);
 }
 
 // ========== Parallax Effect for Hero Background ==========

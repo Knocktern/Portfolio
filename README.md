@@ -1,6 +1,6 @@
 # 🎓 Abdullah Al Sakib - Portfolio Website
 
-A modern, aesthetic portfolio website showcasing my journey as an aspiring ML/AI Engineer.
+A modern, aesthetic portfolio website showcasing my work as a software developer.
 
 [![Deployed on GitHub Pages](https://img.shields.io/badge/Deployed-GitHub%20Pages-success)](https://knocktern.github.io/portfolio)
 
@@ -242,7 +242,7 @@ This project is open source and available for personal use. Feel free to fork an
 ## 🤝 Contact
 
 **Abdullah Al Sakib**  
-🎓 CSE Student | Aspiring ML/AI Engineer  
+🎓 CSE Student | Software Developer  
 📧 Email: asakib223519@bscse.uiu.ac.bd  
 💼 LinkedIn: [abdullah-sakib12](https://www.linkedin.com/in/abdullah-sakib12)  
 💻 GitHub: [@Knocktern](https://github.com/Knocktern)
