@@ -1,0 +1,239 @@
+\documentclass[11pt,letterpaper]{article}
+
+% Packages
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+% Font options
+\usepackage[sfdefault]{FiraSans}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \textbf{ABDULLAH AL SAKIB}} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +8801782930930 ~ 
+    \href{mailto:asakib223519@bscse.uiu.ac.bd}{\raisebox{-0.2\height}\faEnvelope\  asakib223519@bscse.uiu.ac.bd} ~ 
+    \href{https://linkedin.com/in/abdullah-sakib12}{\raisebox{-0.2\height}\faLinkedin\ linkedin.com/in/abdullah-sakib12} ~
+    \href{https://github.com/Knocktern}{\raisebox{-0.2\height}\faGithub\ github.com/Knocktern} \\
+    \small 1212, Dhaka, Bangladesh
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {United International University (UIU)}{Dhaka, Bangladesh}
+      {Bachelor of Science in Computer Science and Engineering}{Expected Graduation: 2026}
+    \resumeSubheading
+      {Rajshahi Government City College}{Rajshahi, Bangladesh}
+      {Higher Secondary School Certificate (HSC) - GPA 5.00}{2021}
+    \resumeSubheading
+      {Rajshahi Collegiate School}{Rajshahi, Bangladesh}
+      {Secondary School Certificate (SSC) - GPA 5.00}{2019}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: C, C++, Java, Python, JavaScript} \\
+     \textbf{Machine Learning \& AI}{: Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, Jupyter} \\
+     \textbf{Web Technologies}{: Flask, HTML/CSS, Bootstrap, WebRTC, Socket.IO} \\
+     \textbf{Databases}{: MySQL, SQLAlchemy} \\
+     \textbf{Tools \& OS}{: Git, GitHub, VS Code, REST APIs, xv6 (Unix-like OS)} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Hospital Management System} $|$ \emph{Flask, MySQL, SQLAlchemy, HTML, CSS, Bootstrap}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a Flask-based system to streamline hospital operations including doctor and patient management, appointments, and medical records}
+            \resumeItem{Implemented role-based access for Managers, Doctors, and Patients with conflict detection}
+            \resumeItem{Integrated automated notifications using Flask-Mail and APScheduler for appointment reminders}
+            \resumeItem{\textbf{GitHub}: https://github.com/Knocktern/Hospital\_Management\_System\_DBMS-}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Job Matching System} $|$ \emph{Flask, MySQL, Python}}{}
+          \resumeItemListStart
+            \resumeItem{Built a Flask-based platform connecting job seekers with employers through skill-based matching algorithms}
+            \resumeItem{Implemented role-based access for Admins, Employers, and Job Seekers}
+            \resumeItem{Developed advanced search and filtering capabilities by location, experience, skills, and salary}
+            \resumeItem{\textbf{GitHub}: https://github.com/Knocktern/Job\_Matching\_System}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{xv6 Lottery Scheduling} $|$ \emph{C, xv6 OS}}{}
+          \resumeItemListStart
+            \resumeItem{Implemented a lottery scheduling algorithm within the xv6 operating system}
+            \resumeItem{Modified kernel-level functions to manage process scheduling based on a ticket system}
+            \resumeItem{Developed custom system calls (settickets, getpinfo) and user-level programs for testing}
+            \resumeItem{\textbf{GitHub}: https://github.com/Knocktern/XV6}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Smart Car Parking System} $|$ \emph{ESP 32, IoT, C++}}{}
+          \resumeItemListStart
+            \resumeItem{Created an IoT-based automated parking management system using ESP32 microcontroller}
+            \resumeItem{Integrated ultrasonic sensors for vehicle detection and servo motors for barrier control}
+            \resumeItem{Implemented LED indicators for real-time parking slot availability display}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Cricket Players Performance Scoring System} $|$ \emph{C}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a C-based command-line application to track and analyze cricket player performance}
+            \resumeItem{Implemented file I/O operations to read player data and compute statistical metrics}
+            \resumeItem{Created algorithms for calculating top scorer, batting average, and MVP using custom data structures}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Air Quality Prediction} $|$ \emph{Python, Scikit-learn, Pandas, NumPy, Matplotlib}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a machine learning model to predict air quality levels using historical environmental data}
+            \resumeItem{Performed data preprocessing, feature engineering, and exploratory data analysis to visualize trends}
+            \resumeItem{Implemented regression algorithms and evaluated model performance using accuracy metrics}
+            \resumeItem{\textbf{GitHub}: https://github.com/Knocktern/Air\_Quality\_Prediction\_ML}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Student Dropout Prediction} $|$ \emph{Python, Scikit-learn, Pandas, NumPy, Seaborn}}{}
+          \resumeItemListStart
+            \resumeItem{Built a predictive analytics solution to identify students at risk of dropping out for early intervention}
+            \resumeItem{Developed classification models and conducted exploratory data analysis to determine feature importance}
+            \resumeItem{Compared performance of various machine learning algorithms to provide actionable insights}
+            \resumeItem{\textbf{GitHub}: https://github.com/Knocktern}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Judges Choice Award Winner} $|$ \emph{UIU HackDay 2026 Hackathon}}{}
+        \resumeItemListStart
+            \resumeItem{Won the prize for developing "The Quiet Game" - an innovative multiplayer game using sign language}
+            \resumeItem{Implemented real-time WebRTC video streaming and a multiplayer system with live leaderboards}
+        \resumeItemListEnd
+        \vspace{-13pt}
+    \resumeProjectHeading
+        {\textbf{1st Runner Up} $|$ \emph{UIU CSE Project Show (Fall '25)}}{}
+        \resumeItemListStart
+            \resumeItem{Achieved 1st Runner Up in the Software Engineering Lab category for the project "HireMe"}
+            \resumeItem{Recognized for building a comprehensive platform around real hiring and interview workflows}
+        \resumeItemListEnd
+        \vspace{-13pt}
+    \resumeProjectHeading
+        {\textbf{Joint 2nd Runner Up} $|$ \emph{UIU CSE Project Show (Fall '25)}}{}
+        \resumeItemListStart
+            \resumeItem{Secured Joint 2nd Runner Up position in the FYDP-1 category for a research-based project}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Volunteer Teacher}{2019 -- 2022}
+      {Nobo Utthan Bangladesh (NGO)}{Rajshahi, Bangladesh}
+      \resumeItemListStart
+        \resumeItem{Provided free education to homeless children, teaching basic literacy, numeracy, and essential life skills}
+        \resumeItem{Collaborated with other volunteers to create a positive and motivational atmosphere for underprivileged students}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}
