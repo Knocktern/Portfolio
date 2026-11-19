@@ -3,409 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Abdullah Al Sakib - Software Engineer | Portfolio showcasing full-stack projects and problem-solving work">
+    <meta name="description" content="Abdullah Al Sakib — CSE graduate (UIU, CGPA 3.87) and software engineer building full-stack web apps and machine learning solutions.">
     <meta name="author" content="Abdullah Al Sakib">
     <title>Abdullah Al Sakib | Software Engineer</title>
-    
-    <!-- Favicon -->
+
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="alternate icon" href="favicon.ico">
-    
-    <!-- Google Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/style.css?v=20260317-2">
-    <link rel="stylesheet" href="css/animations.css?v=20260317-3">
+
+    <link rel="stylesheet" href="css/style.css?v=20261119-2">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <a href="#home" class="logo">AS</a>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#achievements" class="nav-link">Achievements</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+<div class="page">
+
+    <!-- ===== Profile header: everything a recruiter needs in one strip ===== -->
+    <header class="profile card">
+        <img class="avatar" src="assets/images/profile.png" alt="Abdullah Al Sakib" id="profileImage">
+
+        <div class="identity">
+            <div class="name-row">
+                <h1>Abdullah Al Sakib</h1>
+                <span class="status"><span class="dot"></span>Open to work</span>
+            </div>
+            <p class="role">Software Engineer · CSE Graduate</p>
+            <p class="summary">
+                Computer Science &amp; Engineering graduate from United International University (CGPA <strong>3.87</strong>).
+                First author of a reinforcement-learning-based secure routing protocol for wireless sensor networks (under review).
+                I build full-stack web apps (Flask, MySQL, WebRTC, Socket.IO) and machine-learning solutions.
+                3× award winner at hackathons and project shows; merit scholarship in 10 trimesters.
+            </p>
+            <ul class="meta">
+                <li><i class="fas fa-location-dot"></i>Dhaka, Bangladesh</li>
+                <li><a href="mailto:aasakib13@gmail.com"><i class="fas fa-envelope"></i>aasakib13@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/abdullah-sakib12" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i>abdullah-sakib12</a></li>
+                <li><a href="https://github.com/Knocktern" target="_blank" rel="noopener"><i class="fab fa-github"></i>Knocktern</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
+        <div class="actions">
+            <a href="assets/cv/CV_0112230519_Abdullah Al Sakib.pdf" download class="btn btn-primary"><i class="fas fa-download"></i>Download CV</a>
+            <a href="mailto:aasakib13@gmail.com" class="btn btn-ghost"><i class="fas fa-paper-plane"></i>Email me</a>
         </div>
-        <div class="container hero-content">
-            <div class="hero-text">
-                <p class="greeting fade-in">Hello, I'm</p>
-                <h1 class="name fade-in-up">Abdullah Al Sakib</h1>
-                <h2 class="title fade-in-up"><span class="gradient-text typing-text" data-phrases="Final-Year CSE Student|Building real-world software|Passionate about DevOps & Cloud|Eager to learn AI automation"></span></h2>
-                <p class="tagline fade-in-up">Passionate about building scalable software and intelligent systems to solve real-world problems.</p>
-                <div class="cta-buttons fade-in-up">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
-                </div>
-                <div class="social-links fade-in">
-                    <a href="https://github.com/Knocktern" target="_blank" aria-label="GitHub" class="social-icon">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/abdullah-sakib12" target="_blank" aria-label="LinkedIn" class="social-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:asakib223519@bscse.uiu.ac.bd" aria-label="Email" class="social-icon">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-image fade-in">
-                <div class="image-wrapper">
-                    <img src="assets/images/profile.png" alt="Abdullah Al Sakib" id="profileImage">
-                    <div class="image-overlay"></div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <a href="#about">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>
+    </header>
+
+    <!-- ===== Key numbers ===== -->
+    <section class="stats" aria-label="Key facts">
+        <div class="stat card"><span class="stat-value">3.87<small>/4.00</small></span><span class="stat-label">CGPA</span></div>
+        <div class="stat card"><span class="stat-value">BSc CSE</span><span class="stat-label">UIU · Graduated 2026</span></div>
+        <div class="stat card"><span class="stat-value">1st-author</span><span class="stat-label">Paper · ICEEICT 2027 (under review)</span></div>
+        <div class="stat card"><span class="stat-value">3 + 10×</span><span class="stat-label">Awards · Merit scholarship terms</span></div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-subtitle">Get To Know More</p>
-                <h2 class="section-title">About Me</h2>
-            </div>
-            <div class="about-content">
-                <div class="about-text reveal">
-                    <p class="about-intro">
-                        I'm a <strong>4th-year Computer Science & Engineering student</strong> at United International University 
-                        with a strong passion for <strong>Machine Learning and Artificial Intelligence</strong>.
-                    </p>
-                    <p>
-                        Currently maintaining a <strong>3.83 CGPA</strong> and set to graduate in <strong>2026</strong>,
-                        I'm actively exploring the fascinating world of ML/AI through hands-on projects that solve real-world problems.
-                    </p>
-                    <p>
-                        My journey combines strong <strong>full-stack development skills</strong> with a growing expertise in 
-                        <strong>machine learning, data science, and predictive analytics</strong>. I believe in building solutions 
-                        that are not just technically sound, but also meaningful and impactful.
-                    </p>
-                    <div class="quick-facts">
-                        <div class="fact-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div>
-                                <strong>Education</strong>
-                                <p>BSc in CSE, UIU</p>
-                            </div>
+    <!-- ===== Main grid ===== -->
+    <div class="grid">
+
+        <!-- Left column -->
+        <aside class="col-side">
+            <section class="card block">
+                <h2><i class="fas fa-code"></i>Skills</h2>
+                <dl class="skills">
+                    <dt>Languages</dt>
+                    <dd><span>Python</span><span>C</span><span>SQL</span><span>JavaScript</span><span>Java</span><span>C++</span></dd>
+                    <dt>Data &amp; ML</dt>
+                    <dd><span>Scikit-learn</span><span>XGBoost</span><span>YOLOv8</span><span>OpenCV</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span></dd>
+                    <dt>Web &amp; Databases</dt>
+                    <dd><span>Flask</span><span>MySQL</span><span>SQLAlchemy</span><span>WebRTC</span><span>Socket.IO</span><span>HTML/CSS</span></dd>
+                    <dt>Research &amp; Tools</dt>
+                    <dd><span>NS-3</span><span>LaTeX</span><span>Git</span><span>GitHub</span><span>Linux / xv6</span></dd>
+                    <dt>Languages spoken</dt>
+                    <dd><span>Bangla</span><span>English</span></dd>
+                </dl>
+            </section>
+
+            <section class="card block">
+                <h2><i class="fas fa-graduation-cap"></i>Education</h2>
+                <ul class="timeline">
+                    <li>
+                        <div class="tl-head"><strong>BSc in Computer Science &amp; Engineering</strong><span>2026</span></div>
+                        <p>United International University, Dhaka · <b>CGPA 3.87 / 4.00</b></p>
+                    </li>
+                    <li>
+                        <div class="tl-head"><strong>HSC — GPA 5.00</strong><span>2021</span></div>
+                        <p>Rajshahi Government City College</p>
+                    </li>
+                    <li>
+                        <div class="tl-head"><strong>SSC — GPA 5.00</strong><span>2019</span></div>
+                        <p>Rajshahi Collegiate School</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="card block">
+                <h2><i class="fas fa-hands-helping"></i>Co-Curricular Activities</h2>
+                <ul class="timeline">
+                    <li>
+                        <div class="tl-head"><strong>Volunteer, Study World Roadshow</strong><span>Apr 2026</span></div>
+                        <p>IDP Education Bangladesh, Dhaka — guided participants and supported event coordination.</p>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+
+        <!-- Right column -->
+        <main class="col-main">
+            <section class="card block">
+                <h2><i class="fas fa-flask"></i>Research</h2>
+                <div class="research">
+                    <div>
+                        <span class="badge pending">Under review · ICEEICT 2027</span>
+                        <h3>MERIT-RP: A Trust-Aware Reinforcement Learning-Based Secure and Energy-Efficient Routing Protocol for Wireless Sensor Networks</h3>
+                        <p class="research-meta"><b>A. A. Sakib</b> et al. (7 authors, first author) · Undergraduate thesis, supervised by Dr. A.K.M. Muzahidul Islam</p>
+                    </div>
+                    <ul>
+                        <li>Mobility-aware clustering (Link Expiration Time), Q-learning route selection at the base station, AES-128-CCM* encryption and Beta-reputation trust gating.</li>
+                        <li>Evaluated in simulation against LEACH, LEACH-C, MLSRP and QLRP over 20 random seeds with 95% confidence intervals.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="card block">
+                <h2><i class="fas fa-trophy"></i>Achievements</h2>
+                <div class="awards">
+                    <article class="award">
+                        <button class="thumb" data-full="assets/images/Hackathon.jpg" aria-label="View UIU HackDay award photo">
+                            <img src="assets/images/Hackathon.jpg" alt="UIU HackDay 2026 award" loading="lazy">
+                        </button>
+                        <div>
+                            <span class="badge gold">Winner</span>
+                            <h3>Judges' Choice Award — UIU HackDay 2026</h3>
+                            <p>Built <b>The Quiet Game</b>, a multiplayer word game played in sign language, with real-time WebRTC video and live leaderboards.</p>
                         </div>
-                        <div class="fact-item">
-                            <i class="fas fa-trophy"></i>
-                            <div>
-                                <strong>CGPA</strong>
-                                <p>3.83/4.00</p>
-                            </div>
+                    </article>
+                    <article class="award">
+                        <button class="thumb" data-full="assets/images/ProjectShow.jpg" aria-label="View UIU CSE Project Show award photo">
+                            <img src="assets/images/ProjectShow.jpg" alt="UIU CSE Project Show — HireMe award" loading="lazy">
+                        </button>
+                        <div>
+                            <span class="badge silver">1st Runner Up</span>
+                            <h3>UIU CSE Project Show (Fall '25) — SE Lab</h3>
+                            <p>Team NoName's <b>HireMe</b>, a hiring platform with job matching, assessments and video interviews.</p>
                         </div>
-                        <div class="fact-item">
-                            <i class="fas fa-calendar"></i>
-                            <div>
-                                <strong>Graduation</strong>
-                                <p>Expected 2026</p>
-                            </div>
+                    </article>
+                    <article class="award">
+                        <button class="thumb" data-full="assets/images/ProjectShowFYDP.jpg" aria-label="View FYDP award photo">
+                            <img src="assets/images/ProjectShowFYDP.jpg" alt="UIU CSE Project Show — FYDP-1 award" loading="lazy">
+                        </button>
+                        <div>
+                            <span class="badge bronze">Joint 2nd Runner Up</span>
+                            <h3>UIU CSE Project Show (Fall '25) — FYDP-1</h3>
+                            <p>Recognised for a research-based final-year design project. <button class="link-btn" data-full="assets/images/poster.jpg">See winners poster</button></p>
                         </div>
+                    </article>
+                </div>
+                <p class="scholarship"><i class="fas fa-award"></i><span><b>Academic Merit Scholarship</b>, United International University: awarded in 10 trimesters (50% seven times, 25% three times)</span></p>
+            </section>
+
+            <section class="card block">
+                <div class="block-head">
+                    <h2><i class="fas fa-folder-open"></i>Projects</h2>
+                    <div class="filters" role="tablist">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="Full-Stack">Full-Stack</button>
+                        <button class="filter-btn" data-filter="Machine Learning">ML</button>
                     </div>
                 </div>
-                <div class="skills-section reveal">
-                    <h3 class="skills-title">Technical Skills</h3>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h4><i class="fas fa-brain"></i> Machine Learning & AI</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">Scikit-learn</span>
-                                <span class="skill-tag">Pandas</span>
-                                <span class="skill-tag">NumPy</span>
-                                <span class="skill-tag">Matplotlib</span>
-                                <span class="skill-tag">Seaborn</span>
-                                <span class="skill-tag">Jupyter</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h4><i class="fas fa-code"></i> Full-Stack Development</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Flask</span>
-                                <span class="skill-tag">MySQL</span>
-                                <span class="skill-tag">JavaScript</span>
-                                <span class="skill-tag">HTML/CSS</span>
-                                <span class="skill-tag">WebRTC</span>
-                                <span class="skill-tag">Socket.IO</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h4><i class="fas fa-tools"></i> Tools & Technologies</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Git</span>
-                                <span class="skill-tag">GitHub</span>
-                                <span class="skill-tag">VS Code</span>
-                                <span class="skill-tag">REST APIs</span>
-                                <span class="skill-tag">Data Analysis</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                <div class="projects" id="projectsGrid"></div>
+            </section>
+        </main>
+    </div>
 
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-subtitle">Recognition & Success</p>
-                <h2 class="section-title">Achievements</h2>
-            </div>
-            <div class="achievements-grid">
-                <!-- Main Achievement Card - UIU HackDay -->
-                <div class="achievement-card featured reveal">
-                    <div class="achievement-main">
-                        <div class="achievement-badge">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <div class="achievement-content">
-                            <h3 class="achievement-title">🏆 Judges Choice award Winner - UIU HackDay 2026 Hackathon</h3>
-                            <p class="achievement-event">UIU HackDay 2026</p>
-                            <p class="achievement-description">
-                                Won the prize at the UIU HackDay 2026 Hackathon for developing <strong>"The Quiet Game"</strong> - 
-                                an innovative multiplayer game that uses sign language instead of drawing for word guessing.
-                            </p>
-                            <div class="achievement-highlights">
-                                <div class="highlight-item">
-                                    <i class="fas fa-lightbulb"></i>
-                                    <span>Innovative concept combining accessibility with entertainment</span>
-                                </div>
-                                <div class="highlight-item">
-                                    <i class="fas fa-video"></i>
-                                    <span>Real-time WebRTC video streaming implementation</span>
-                                </div>
-                                <div class="highlight-item">
-                                    <i class="fas fa-users"></i>
-                                    <span>Multiplayer system with live leaderboards</span>
-                                </div>
-                            </div>
-                            <div class="achievement-tech">
-                                <span class="tech-badge">Python</span>
-                                <span class="tech-badge">Flask</span>
-                                <span class="tech-badge">WebRTC</span>
-                                <span class="tech-badge">Socket.IO</span>
-                            </div>
-                            <a href="#projects" class="achievement-link">View Project Details <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="achievement-image">
-                        <img src="assets/images/Hackathon.jpg" alt="UIU HackDay Award">
-                    </div>
-                </div>
-
-                <!-- Achievement Card - UIU CSE Project Show (Fall '25) -->
-                <div class="achievement-card featured reveal">
-                    <div class="achievement-main">
-                        <div class="achievement-badge">
-                            <i class="fas fa-award"></i>
-                        </div>
-                        <div class="achievement-content">
-                            <h3 class="achievement-title">🥈 1st Runner Up — UIU CSE Project Show (Fall ’25)</h3>
-                            <p class="achievement-event">Software Engineering Lab</p>
-                            <p class="achievement-description">
-                                Team <strong>NoName</strong> achieved <strong>1st Runner Up</strong> in the Software Engineering Lab category for the project <strong>HireMe</strong>.
-                            </p>
-                            <div class="achievement-highlights">
-                                <div class="highlight-item">
-                                    <i class="fas fa-users"></i>
-                                    <span>Team project recognized among top submissions</span>
-                                </div>
-                                <div class="highlight-item">
-                                    <i class="fas fa-briefcase"></i>
-                                    <span>Built around real hiring and interview workflows</span>
-                                </div>
-                                <div class="highlight-item">
-                                    <i class="fas fa-link"></i>
-                                    <span>Source code available on GitHub</span>
-                                </div>
-                            </div>
-                            <div class="achievement-tech">
-                                <span class="tech-badge">Python</span>
-                                <span class="tech-badge">Flask</span>
-                                <span class="tech-badge">MySQL</span>
-                                <span class="tech-badge">WebRTC</span>
-                                <span class="tech-badge">Socket.IO</span>
-                            </div>
-                            <a href="https://github.com/Knocktern/HireMe" target="_blank" rel="noopener noreferrer" class="achievement-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="achievement-image">
-                        <img src="assets/images/ProjectShow.png" alt="UIU CSE Project Show — HireMe award photo">
-                    </div>
-                </div>
-
-                <!-- Achievement Card - UIU CSE Project Show (Fall '25) - FYDP-1 -->
-                <div class="achievement-card featured reveal">
-                    <div class="achievement-main">
-                        <div class="achievement-badge">
-                            <i class="fas fa-medal"></i>
-                        </div>
-                        <div class="achievement-content">
-                            <h3 class="achievement-title">🥉 Joint 2nd Runner Up — UIU CSE Project Show (Fall ’25)</h3>
-                            <p class="achievement-event">FYDP-1 Category</p>
-                            <p class="achievement-description">
-                                Team <strong>NoName</strong> secured a <strong>Joint 2nd Runner Up</strong> position in the FYDP-1 category for a research-based project.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="achievement-gallery">
-                        <div class="achievement-image">
-                            <img src="assets/images/poster.png" alt="UIU CSE Project Show (Fall '25) — FYDP-1 winner list poster">
-                        </div>
-                        <div class="achievement-image">
-                            <img src="assets/images/ProjectShowFYDP.jpg" alt="UIU CSE Project Show (Fall '25) — award ceremony group photo">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Academic Achievement -->
-                <div class="achievement-card reveal">
-                    <div class="achievement-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h4>Academic Excellence</h4>
-                    <p>Maintaining a <strong>3.83 CGPA</strong> while actively participating in hackathons and building real-world projects.</p>
-                </div>
-
-                <!-- Project Portfolio -->
-                <div class="achievement-card reveal">
-                    <div class="achievement-icon">
-                        <i class="fas fa-project-diagram"></i>
-                    </div>
-                    <h4>Diverse Project Portfolio</h4>
-                    <p>Built <strong>6+ full-scale projects</strong> spanning ML/AI, full-stack development, and real-time systems.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-subtitle">What I've Built</p>
-                <h2 class="section-title">Featured Projects</h2>
-            </div>
-            
-            <!-- Filter Buttons -->
-            <div class="project-filters reveal">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="Machine Learning">Machine Learning</button>
-                <button class="filter-btn" data-filter="Full-Stack">Full-Stack</button>
-            </div>
-
-            <!-- Projects Grid - Will be populated by JavaScript -->
-            <div class="projects-grid" id="projectsGrid">
-                <!-- Projects will be dynamically loaded here -->
-            </div>
-        </div>
-    </section>
-
-    <!-- CV Section -->
-    <section id="cv" class="cv-section">
-        <div class="container">
-            <div class="cv-content reveal">
-                <div class="cv-text">
-                    <h2 class="cv-title">Interested in My Full Background?</h2>
-                    <p class="cv-description">
-                        Download my comprehensive CV to learn more about my education, 
-                        experience, projects, and technical skills.
-                    </p>
-                    <a href="assets/cv/CV_0112230519_Abdullah Al Sakib.pdf" download class="btn btn-primary cv-btn">
-                        <i class="fas fa-download"></i> Download CV
-                    </a>
-                </div>
-                <div class="cv-visual">
-                    <div class="cv-icon">
-                        <i class="fas fa-file-pdf"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-subtitle">Let's Connect</p>
-                <h2 class="section-title">Get In Touch</h2>
-            </div>
-            <div class="contact-content reveal">
-                <p class="contact-intro">
-                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. 
-                    Feel free to reach out!
-                </p>
-                <div class="contact-methods">
-                    <a href="mailto:asakib223519@bscse.uiu.ac.bd" class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h3>Email</h3>
-                        <p>asakib223519@bscse.uiu.ac.bd</p>
-                    </a>
-                    <a href="https://www.linkedin.com/in/abdullah-sakib12" target="_blank" class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </div>
-                        <h3>LinkedIn</h3>
-                        <p>abdullah-sakib12</p>
-                    </a>
-                    <a href="https://github.com/Knocktern" target="_blank" class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <h3>GitHub</h3>
-                        <p>@Knocktern</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; All rights reserved by Abdullah Al Sakib.</p>
-            <div class="footer-links">
-                <a href="https://github.com/Knocktern" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/abdullah-sakib12" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:asakib223519@bscse.uiu.ac.bd"><i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
+        <span>&copy; Abdullah Al Sakib</span>
+        <span>
+            <a href="https://github.com/Knocktern" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/abdullah-sakib12" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:aasakib13@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </span>
     </footer>
+</div>
 
-    <!-- JavaScript -->
-    <script src="js/main.js?v=20260317-2"></script>
+<!-- Image viewer -->
+<dialog class="viewer" id="viewer">
+    <button class="viewer-close" aria-label="Close">&times;</button>
+    <img alt="">
+</dialog>
+
+<script src="js/main.js?v=20261119-2"></script>
 </body>
 </html>

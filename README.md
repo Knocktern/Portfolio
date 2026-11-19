@@ -8,7 +8,7 @@ A modern, aesthetic portfolio website showcasing my work as a software developer
 
 ## ✨ Features
 
-- 🎨 **Modern Light Theme** - Clean, aesthetic design with smooth animations
+- 🎨 **Compact one-page layout** - All key details visible at a glance, with automatic dark mode
 - 📱 **Fully Responsive** - Perfect on all devices (desktop, tablet, mobile)
 - ⚡ **Fast Loading** - Optimized vanilla HTML/CSS/JS
 - 🎭 **Smooth Animations** - Scroll reveals, hover effects, and tasteful transitions
@@ -45,7 +45,6 @@ Portfolio_Project/
 │
 ├── css/
 │   ├── style.css          # Main stylesheet (layout, components)
-│   └── animations.css     # All animations and transitions
 │
 ├── js/
 │   └── main.js            # JavaScript functionality
